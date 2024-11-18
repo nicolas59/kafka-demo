@@ -7,3 +7,5 @@
     zookeeper_servers:
     - ec2-51-44-20-209.eu-west-3.compute.amazonaws.com
   - role: sleighzy.kafka
+    vars:        
+      kafka_zookeeper_connect: "{{ groups['zookeeper-nodes'] | product([':2181']) | map('join') | list | join(',') }}"   
