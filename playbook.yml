@@ -4,4 +4,5 @@
   roles:
   - role: sleighzy.zookeeper
     zookeeper_servers_use_inventory_hostname: true
-    zookeeper_servers: "{{ groups['zookeeper-nodes'] }}"
+    zookeeper_servers:
+    - ec2-51-44-20-209.eu-west-3.compute.amazonaws.com
