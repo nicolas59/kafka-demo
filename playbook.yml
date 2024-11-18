@@ -1,0 +1,8 @@
+---
+- hosts: 127.0.0.1
+  connection: local
+  tasks:
+  - name: "just execute a ls -lrt command"
+    shell: "ls -lrt"
+    register: "output"
+  - debug: var=output.stdout_lines
