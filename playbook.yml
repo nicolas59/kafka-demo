@@ -10,4 +10,4 @@
     vars:    
      zookeeper_servers:
      - ec2-51-44-20-209.eu-west-3.compute.amazonaws.com    
-     kafka_zookeeper_connect: "{{ groups['zookeeper-nodes'] | product([':2181']) | map('join') | list | join(',') }}"   
+     kafka_zookeeper_connect: "ec2-51-44-20-209.eu-west-3.compute.amazonaws.com:2181"   
