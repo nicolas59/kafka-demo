@@ -6,3 +6,4 @@
     zookeeper_servers_use_inventory_hostname: true
     zookeeper_servers:
     - ec2-51-44-20-209.eu-west-3.compute.amazonaws.com
+  - role: sleighzy.ansible-kafka
