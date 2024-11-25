@@ -1,9 +1,9 @@
 spring:
   application:
-    name: calculatire
+    name: calculatrice
 
   kafka:
     producer:
-      bootstrap-servers: ec2-52-47-165-117.eu-west-3.compute.amazonaws.com:9092
+      bootstrap-servers: ec2-52-47-97-138.eu-west-3.compute.amazonaws.com:9092
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer

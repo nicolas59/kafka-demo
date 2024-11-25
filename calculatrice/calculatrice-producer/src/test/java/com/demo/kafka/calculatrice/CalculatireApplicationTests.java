@@ -1,4 +1,4 @@
-package com.demo.kafka.calculatire;
+package com.demo.kafka.calculatrice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

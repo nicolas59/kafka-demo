@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: calculatrice
+
+  kafka:
+    consumer:
+      group-id: my-group-2
+      topic: test-demo
+      bootstrap-servers: ec2-52-47-97-138.eu-west-3.compute.amazonaws.com:9092
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      spring.kafka.consumer.value-deserializer: org.springframework.kafka.support.serializer.JsonSerializer
